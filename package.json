@@ -1,0 +1,28 @@
+{
+  "name": "@congruent-labs/device-bridge-client",
+  "version": "0.1.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "prettier-format": "prettier --config .prettierrc \"./src/**/*.ts\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Congruent Labs Pty Ltd",
+  "devDependencies": {
+    "@types/chrome": "0.0.154",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@congruent-labs/device-bridge-types": "^0.1.0",
+    "uuid": "^8.3.2"
+  }
+}
